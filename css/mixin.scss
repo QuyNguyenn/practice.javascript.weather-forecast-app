@@ -1,0 +1,64 @@
+@mixin sunMoonDisplay($width) {
+    & .moon-sun-img {
+        width: $width;
+        height: $width;
+        border-radius: 50%;
+
+        &.moon {
+            background-image: linear-gradient(to top left, #dd5bf8, #21b2fe);
+            box-shadow: 0 0 calc(0.4 * $width) rgba(33, 178, 254, 0.6);
+        }
+
+        &.sun {
+            // background-image: linear-gradient(to top left, #f8ee5b, #fe7221);
+            background-image: linear-gradient(to top left, #f7ea5c, #fe7221);
+            box-shadow: 0 0 calc(0.4 * $width) rgba(254, 177, 33, 0.6);
+        }
+    }
+}
+
+@mixin weatherIcon($size: 2rem) {
+    & .weather-icon {
+        position: relative;
+        @include sunMoonDisplay($size);
+
+        & .moon-sun-img {
+            box-shadow: none !important;
+        }
+
+        &-sub {
+            & i {
+                position: absolute;
+                bottom: calc(-0.1 * $size);
+                left: calc(-0.2 * $size);
+                font-size: calc(0.7 * $size);
+                transform: scaleX(1.1);
+            }
+        }
+
+        &-main {
+            & i {
+                font-size: calc(1.1 * $size);
+                transform: scaleX(1.1);
+            }
+        }
+
+        &--day {
+            & .weather-icon-sub,
+            .weather-icon-main {
+                & i {
+                    color: #aaa;
+                }
+            }
+        }
+
+        &--night {
+            & .weather-icon-sub,
+            .weather-icon-main {
+                & i {
+                    color: #1f2d61;
+                }
+            }
+        }
+    }
+}
