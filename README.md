@@ -1,6 +1,6 @@
-# JavaScript-Weather_Forecast_App
+# practice.javascript.weather-forecast-app
 
-## Resource
+## Description
 
 __UI Design__: I reference the design from *[dribbble](https://dribbble.com/shots/15292603-Weather-Conceptual-App-Design?utm_source=Clipboard_Shot&utm_campaign=adinyanuar7&utm_content=Weather%20Conceptual%20App%20Design&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=adinyanuar7&utm_content=Weather%20Conceptual%20App%20Design&utm_medium=Social_Share)* made by *[adinyanuar7](https://dribbble.com/adinyanuar7)*
 
